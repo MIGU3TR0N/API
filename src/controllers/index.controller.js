@@ -1,11 +1,14 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    host: '10.234.16.159',
+    host: 'dpg-cp6e47un7f5s73acoa8g-a',
     user: 'miguetron',
-    password: 'Majorasmask_3ds',
-    database: 'firstapi',
-    port: '5432'
+    password: '7yqPGv4PKiWhCH2WLcV5pWK4kwUm87wW',
+    database: 'firstapi_x2of',
+    port: '5432',
+    ssl: {
+        rejectUnauthorized: false
+        }
 });
 
 const updateUser = async (req, res) => {
